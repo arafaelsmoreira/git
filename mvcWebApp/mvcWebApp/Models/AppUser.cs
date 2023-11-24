@@ -1,6 +1,8 @@
-﻿namespace mvcWebApp.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace mvcWebApp.Models
 {
-    public class AppUser
+    public class AppUser : IdentityUser
     {
         public int? Pace { get; set; }
         public int? Mileage { get; set; }
